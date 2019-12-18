@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Pretty print AST",
+        "command": "pretty-ast:pretty-print"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Pretty AST",
+          "submenu": [
+            {
+              "label": "Pretty print",
+              "command": "pretty-ast:pretty-print"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

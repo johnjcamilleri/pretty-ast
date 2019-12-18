@@ -1,0 +1,13 @@
+PhrUtt
+  otherwise_PConj
+  UttImpSg
+    PNeg
+    ImpVP
+      ComplSlash
+        Slash2V3
+          talk_V3
+          something_NP
+        DetNP
+          every_Det
+  VocNP
+    something_NP
