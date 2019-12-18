@@ -2,7 +2,7 @@
   "name": "pretty-ast",
   "main": "./lib/pretty-ast",
   "author": "John J. Camilleri",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Pretty-print an abstract syntax tree (AST)",
   "keywords": [],
   "activationCommands": {
