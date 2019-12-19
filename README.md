@@ -24,3 +24,7 @@ PhrUtt
   VocNP
     something_NP
 ```
+
+## Usage
+
+Choose **Pretty print AST** from a context menu or the command `pretty-ast:pretty-print` from the command palette.
