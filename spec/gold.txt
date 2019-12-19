@@ -11,3 +11,10 @@ PhrUtt
           every_Det
   VocNP
     something_NP
+
+A
+  B
+    'x y z'
+  C
+    D
+    "xy z"
