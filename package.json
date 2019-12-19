@@ -6,7 +6,10 @@
   "description": "Pretty-print an abstract syntax tree (AST)",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "pretty-ast:pretty-print"
+    "atom-workspace": [
+      "pretty-ast:pretty-print",
+      "pretty-ast:collapse"
+    ]
   },
   "repository": "https://github.com/johnjcamilleri/pretty-ast",
   "license": "MIT",
