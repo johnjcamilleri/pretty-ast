@@ -19,6 +19,10 @@
           "label": "Pretty AST",
           "submenu": [
             {
+              "label": "Toggle",
+              "command": "pretty-ast:toggle"
+            },
+            {
               "label": "Pretty print",
               "command": "pretty-ast:pretty-print"
             },

@@ -1,3 +1,8 @@
+## 1.2.0
+
+- Add collapse function
+- Add toggle command
+
 ## 1.1.0
 
 - Handle multiple lines
