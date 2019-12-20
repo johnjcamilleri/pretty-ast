@@ -28,5 +28,5 @@ PhrUtt
 ## Usage
 
 - Choose **Pretty print AST** from a context menu or the command `pretty-ast:pretty-print` from the command palette.
-- Reverse it with `pretty-ast:collapse`
+- Reverse it with **Collapse pretty-printed AST** or `pretty-ast:collapse`
 - Toggle back and forth with `pretty-ast:toggle` (single line selection will be pretty printed, multilines will be collapsed).

@@ -6,7 +6,7 @@
         "command": "pretty-ast:pretty-print"
       },
       {
-        "label": "Collapse pretty printed AST",
+        "label": "Collapse pretty-printed AST",
         "command": "pretty-ast:collapse"
       }
     ]
@@ -27,7 +27,7 @@
               "command": "pretty-ast:pretty-print"
             },
             {
-              "label": "Unpretty print (collapse)",
+              "label": "Collapse",
               "command": "pretty-ast:collapse"
             }
           ]

@@ -27,9 +27,8 @@ describe('Pretty AST', () => {
     packagePath = atom.packages.resolvePackagePath(packageName)
   })
 
-  describe('when pretty-print is triggered', () => {
-    it('formats the tree correctly', () => {
-      // open file
+  describe('pretty printing', () => {
+    it('multiple lines', () => {
       const testPath = 'spec/test.txt'
       const goldPath = 'spec/gold.txt'
 
@@ -45,9 +44,35 @@ describe('Pretty AST', () => {
 
           waitsForPromise(() =>
             f.read().then(gold => {
-              expect(editor.getText()).toEqual(gold)
+              expect(editor.getText().trim()).toEqual(gold.trim())
             })
           )
+        })
+      )
+    })
+  })
+
+  describe('collapsing', () => {
+  })
+
+  describe('toggling', () => {
+    it('is reversible', () => {
+      const testPath = 'spec/test.txt'
+      waitsForPromise(() =>
+        atom.workspace.open(`${packagePath}/${testPath}`).then(editor => {
+          editor.setCursorBufferPosition([0, 0])
+          editor.selectDown(1)
+          const original = editor.getSelectedText()
+
+          atom.commands.dispatch(workspaceElement, 'pretty-ast:toggle')
+          waitsForPromise(() => activationPromise)
+          // const pretty = editor.getSelectedText()
+
+          atom.commands.dispatch(workspaceElement, 'pretty-ast:toggle')
+          waitsForPromise(() => activationPromise)
+          const collapsed = editor.getSelectedText()
+
+          expect(original).toEqual(collapsed)
         })
       )
     })
